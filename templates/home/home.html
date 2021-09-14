@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock title %} 
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %}
+<div class="container my-3 ">
+<marquee width="100%" height="50px" scrollamount="12" onmouseover="this.stop()" onmouseout="this.start()">
+<h1>Hey welcome to akCoder</h1>
+</marquee>
+</div>
+<div class="container">
+
+<div class="jumbotron border border-warning">
+  <h1 class="display-4 text-success">Welcome to akCoder</h1>
+  <p class="lead"><h5>This is a simple akCoder block, this iCoder website for studing Sql, pl/sql, Python, dJango, HTML,CSS and extra programming content and information.</h5></p>
+  <hr class="my-4 border border-info">
+  <a class="btn btn-primary btn-lg border border-warning" href="/blog" role="button">Go to Block</a>
+</div>
+</div>
+
+
+<div class="container my-3 md-7 bg-text-danger">
+<h4>Popular blogpost : </h4>
+</div>
+<div class="container my-4 " >
+<div class="col-my-6 md-4">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border border-warning">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block text-primary">World</strong>
+          <h3 class="mb-0 my-3 text-success">Featured post</h3> 
+          <div class="mb-1 text-muted my-2">Sep 24</div>
+          <p class="card-text mb-auto"><h5>This is a popular Blog post with some extra content  which is very useful for you and help you to learn some extra Programming content.</h5></p>
+		  <div class="container my-3" >
+          <a href="/blog" a class="btn btn-primary btn-lg border border-warning" role="button">Continue reading</a>
+		  </div>
+        </div>
+       
+      </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+{% endblock body %}
